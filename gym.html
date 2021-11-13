@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg.jpg);
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: inline-block;
+        /* border: 2px  solid red; */
+
+    }
+
+    .logo img {
+        width: 30px;
+        filter: invert(100%);
+        margin: 0px 0px 0px 32px;
+    }
+
+    .logo div {
+        text-align: center;
+        line-height: 8px;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+
+        margin: 10px auto;
+        /* border: 2px  solid rgb(0, 255, 21); */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        display: inline-block;
+        /* border: 2px  solid rgb(83, 238, 243); */
+
+    }
+
+    .btn {
+        margin: 2px 5px;
+        background-color: black;
+        color: white;
+        padding: 0px 4px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(92, 90, 90);
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar ul {
+        padding: 0px 10px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        margin: 0px;
+        color: white;
+        text-decoration: none;
+        padding: 7px 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+
+    }
+
+    .container {
+        border-radius: 10px;
+        display: block;
+        border: 2px solid rgb(255, 255, 255);
+        width: 36%;
+        margin: 90px auto;
+    }
+
+    .forms {
+        margin: 5px 109px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .forms input {
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .select select {
+        border-radius: 10px;
+        width: 44%;
+        margin: 3px 109px;
+    }
+
+    .submit {
+        /* border: 2px solid white; */
+        display: inline-block;
+        margin: 5px 135px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <div>Puppy Fitness</div>
+            </div>
+        </div>
+
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li> <a href="#" class="active">Home</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#"> Fees</a> </li>
+                    <li> <a href="#"> About us</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Login</button>
+            <button class="btn">Singup</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h2> DETAILS</h2>
+        <form action="noaction.php">
+        <div class="forms">
+            <input type="text" name="name" placeholder="Enter name">
+        </div>
+        <div class="forms">
+            <input type="tel" name="name" placeholder="Enter phoneno">
+        </div>
+        <div class="forms">
+            <input type="email" name="name" placeholder="Enter email">
+        </div>
+        <div class="select">
+            <select name="country" aria-placeholder="country">
+                <option value="kar">karnataka</option>
+                <option value="mum">mumbai</option>
+                <option value="ker">kerla</option>
+                <option value="del">delhi</option>
+            </select>
+        </div>
+        <div class="submit">
+            <button class="btn">submit</button>
+            <button class="btn">reset</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
